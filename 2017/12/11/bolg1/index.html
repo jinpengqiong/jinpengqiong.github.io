@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>不使用 JS 匿名函数的三个理由 | Hew out the mountain of despair a stone of hope!</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Hew out the mountain of despair a stone of hope!">
+    <meta name="author" content="Roc Kim">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Hew out the mountain of despair a stone of hope!" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Hew out the mountain of despair a stone of hope!</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-12-11T03:03:38.000Z" itemprop="datePublished">
+          2017-12-11
+      </time>
+    
+</span>
+                <h1>不使用 JS 匿名函数的三个理由</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>无论你在什么时候读代码，您都必须注意到匿名函数。有时它们被称为 lambda，有时是匿名函数，不管怎样，我认为他们是不好使用的。<br>如果你不知道匿名函数是什么，这里有一个引语:<br>匿名函数是一种在运行时动态声明的函数。它们之所以被称为匿名函数是因为不同于普通函数，它们并没有函数名。 — Helen Emerson, Helephant.com<br>匿名函数形式如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">function</span></span> () &#123; ... code ... &#125; OR (args) =&gt; &#123; ... code .. &#125;</span><br></pre></td></tr></table></figure></p>
+<p>今天我尝试让大家理解只有在绝对需要的情况下才使用匿名函数的想法。匿名函数不应该是首选，而且你自己也应该知道为什么使用它。当理解这种想法之后，你的代码会变得更简洁，更容易维护，并且更容易跟踪bug。<br>先从避免使用匿名函数的三个理由开始：<br>无论你多么擅长写代码，出现错误也是不可避免的。有时候，这些错误很容易被查出，有时候并不容易。<br>如果你知道这些错误来自哪里，那么错误会很容易被查出来。为了容易查出错误，我们使用这个被叫做堆栈轨迹的工具。如果你不了解堆栈轨迹，goole给出了很棒的介绍。<br>假设现在有一个非常简单的项目：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">start</span></span> () &#123; </span><br><span class="line">	(<span class="keyword">function</span> <span class="function"><span class="title">middle</span></span> () &#123; </span><br><span class="line">		(<span class="keyword">function</span> <span class="function"><span class="title">end</span></span> () &#123; </span><br><span class="line">			console.log(<span class="string">'test'</span>); </span><br><span class="line">			&#125;)() </span><br><span class="line">		&#125;)() </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面代码里面有一个非常愚蠢的错误，拼写错误(console.log)。在小项目里面，这个拼写错误不是什么大问题。如果这是一个有非常多模块非常大的项目一小段，问题就大了。假设这个愚蠢的错误不是你犯的，那么新来的初级工程师将会在他休假之前把这个错误提交到代码库！<br>现在，我们必须追查。 使用我们精心命名的函数，我们得到如下的堆栈跟踪：<br>谢谢你命名你的函数，初级开发者们！ 现在我们可以轻松地追踪到这个bug。<br>但是..一旦我们解决了这个问题，就会发现还有另一个bug。 这次是一位更资深的开发人员介绍的。这个人知道lambdas（匿名函数），并在代码中大量使用它们。 结果他们偶然发现了一个bug，我们的工作就是追踪它。<br>下面是代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="title">function</span></span> () &#123; </span><br><span class="line">	(<span class="function"><span class="title">function</span></span> () &#123; </span><br><span class="line">		(<span class="function"><span class="title">function</span></span> () &#123; </span><br><span class="line">			console.log(<span class="string">'test'</span>); </span><br><span class="line">			&#125;)(); </span><br><span class="line">		&#125;)(); </span><br><span class="line">	&#125;)();</span><br></pre></td></tr></table></figure></p>
+<p>吃不吃惊，这名开发者也忘记了如何拼写console.log了！这也太巧合了吧！令人感到遗憾的是，他们都没有命名他们的函数。<br>那么控制台会输出什么呢？<br>好吧，我们至少还有行号，对吧？在这个例子中，看起来我们有大约7行代码。如果我们处理一大段代码会如何呢？比如一万行代码？行号的跨度如此之大该怎么办呢？如果代码被折叠后有没有一个代码地图文件，那么对行号的渲染是不是根本就是没有什么用了呢？<br>我想对这些问题的回答相当简单，答案就是：想这些会让你一整天都会过的相当糟心。</p>
+<h2 id="可读性"><a href="#可读性" class="headerlink" title="可读性"></a>可读性</h2><p>咦，我听说你还不信。你仍旧对你的匿名函数恋恋不舍，并且还从未发生过bug。我的错，你的代码是完整的。但是让我们看看这个！<br>看看下面两段代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> initiate (arguments) &#123; </span><br><span class="line">	<span class="built_in">return</span> new Promise(</span><br><span class="line">		(resolve, reject) =&gt; &#123; </span><br><span class="line">			try &#123; </span><br><span class="line">				<span class="keyword">if</span> (arguments)&#123; </span><br><span class="line">					<span class="built_in">return</span> resolve(<span class="literal">true</span>); </span><br><span class="line">				&#125; </span><br><span class="line">				<span class="built_in">return</span> resolve(<span class="literal">false</span>); </span><br><span class="line">			&#125; catch (e) &#123; </span><br><span class="line">					reject(e); </span><br><span class="line">			&#125; </span><br><span class="line">		&#125;); </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">initiate(<span class="literal">true</span>) </span><br><span class="line">	.<span class="keyword">then</span>(res =&gt; &#123; <span class="keyword">if</span> (res) &#123; </span><br><span class="line">		doSomethingElse(); </span><br><span class="line">		&#125; <span class="keyword">else</span> &#123; </span><br><span class="line">			doSomething(); </span><br><span class="line">			&#125; </span><br><span class="line">		).catch(e =&gt; &#123; </span><br><span class="line">			logError(e.message); </span><br><span class="line">			restartApp(); </span><br><span class="line">			&#125; </span><br><span class="line">		);</span><br></pre></td></tr></table></figure>
+<p>这是一个非常不正常的例子，但是我相信你已经明白我要说什么了。我们反悔了一个promise方法，我们用这个promise对象/方法处理不同的响应。<br>你也许会认为几段代码读起来并不难，但我认为它们可以变得更好！<br>如果我们去掉所有的匿名函数会怎样呢？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> initiate (arguments) &#123; </span><br><span class="line">	<span class="built_in">return</span> new Promise(checkForArguments); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> checkForArguments (resolve, reject) &#123; </span><br><span class="line">	try &#123; <span class="keyword">if</span> (arguments) &#123; </span><br><span class="line">		<span class="built_in">return</span> resolve(<span class="literal">true</span>); </span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">return</span> resolve(<span class="literal">false</span>); </span><br><span class="line">	&#125; catch (e) &#123; </span><br><span class="line">		reject(e); </span><br><span class="line">		&#125; </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> evaluateRes (res) &#123; </span><br><span class="line">	<span class="keyword">if</span> (res) &#123; doSomethingElse(); </span><br><span class="line">	&#125; <span class="keyword">else</span> &#123; </span><br><span class="line">		doSomething(); </span><br><span class="line">		&#125; </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> handleError (e) &#123; </span><br><span class="line">		logError(e.message); </span><br><span class="line">		restartApp(); </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">initiate(<span class="literal">true</span>) </span><br><span class="line">	.<span class="keyword">then</span>(evaluateRes) </span><br><span class="line">	.catch(handleError);</span><br></pre></td></tr></table></figure>
+<p>好，先讲清楚：这部分代码更长，但我不认为只是增加了可读性！我们精心命名的函数与匿名函数不一样，只要我们一看到它们的名字就知道它们的功能是什么。这避免了在评估代码时出现心理障碍。<br>这也有助于分清楚其中的关系。与创建一个方法、将其传递、然后运行逻辑不同，在第二个例子中的参数被给到了then，catch只是指向了发生所有事情的函数。<br>关于更具有可读性，我没有什么再能说服你的了。但是也许你还没被说服的话，我可以试一下最后的论据。</p>
+<h2 id="可重用性"><a href="#可重用性" class="headerlink" title="可重用性"></a>可重用性</h2><p>你注意到上一个例子了吗？上个例子中的函数的使用范围从参数和初始化函数，变为让所有函数都能使用。<br>当你使用匿名函数时这些函数很难在你的应用程序内重复使用。<br>可重用性将不复存在，最终你会一遍又一遍地写重复的代码。正如我们所见的，代码写的越少引入的Bug就越少，用户必须加载的内容就越少。所有人都会因此获益！<br>相反的，命名函数可以全局使用，而不需要像变量一样到处传递。你的代码的可重用性会更好，<br>匿名函数有可取的地方吗？<br>有。虽然很不愿意承认，但有时候使用匿名函数是最好的选择。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const stuff = [ </span><br><span class="line">  &#123; hide: <span class="literal">true</span>, name: <span class="string">'justin'</span> &#125;, </span><br><span class="line">  &#123; hide: <span class="literal">false</span>, name: <span class="string">'lauren'</span> &#125;,</span><br><span class="line">  &#123; hide: <span class="literal">false</span>, name: <span class="string">'max'</span> &#125;,</span><br><span class="line">];</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const filteredStuff = stuff.filter(s =&gt; !s.hide);</span><br></pre></td></tr></table></figure>
+<p>上边代码中的匿名函数s =&gt; !s.hide非常简单，即使不能在别的地方使用也不会对别人有任何影响，而且也可以在stuff.filter中显示出堆栈调用。如果想要重用这段代码，最好重用整段代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> filterByHide (array) &#123;</span><br><span class="line">  <span class="built_in">return</span> array.filter(item =&gt; !item.hide);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>有时你想把你所有的代码封装到匿名函数中，以保证全局范围不会被污染。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(() =&gt; &#123;</span><br><span class="line"> ... your code here ...</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></p>
+<p>在栈空间中拥有一个顶级的匿名函数真得不会有什么错误。没有代码重用是痛苦的，因为完整的目的是保持方法内含。<br>我确定这会有其他好的用法，请在评论中自由分享之！<br>感谢阅读，现在跳出这些，并停止编写匿名函数！</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2017/11/18/test/">
+        vue项目中v-model父子组件通信的实现详解 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Roc Kim. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
